@@ -151,8 +151,9 @@
 	}
 	.footer-benifit {
 		/*margin-left: -2px;
-		margin-right: -2px;*/
-		transform: translateY(55px);
+		margin-right: -2px;
+		transform: translateY(55px);*/
+		display: none;
 	}
 	.footer-content {
 		/*margin-left: -2px;
