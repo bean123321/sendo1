@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sendo</title>
+	<link rel="icon" href="https://2momart.vn/upload/medium/042020/sendo-app-01.png" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="modal-open">
+	<div class="app">
+		<header class="header">
+			<div class="grid wide">
+				<nav class="header__navbar hide-on-mobile">
+					<ul class="header__navbar-list-1">
+						<li class="header__navbar-item header__navbar-user--seperate">
+								<a href="" class="header__navbar-icon-link">
+								    <i class="header__navbar-icon fa-solid fa-download"></i>
+							    </a>
+							
+								<span class="header__navbar-title">
+									Tải ứng dụng
+								</span>
+						  	<div class="header__qr">
+							 <img src="https://f8ubuntu.online/assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+							 <div class="header__qr-apps">
+									<a href="" class="header__qr-link">
+										<img src="https://f8ubuntu.online/assets/img/google_play.png" alt="google play" class="header__qr-download-img">
+									</a>
+
+									<a href="" class="header__qr-link">
+									    <img src="https://f8ubuntu.online/assets/img/app_store.png" alt="app store" class="header__qr-download-img">
+									</a>
+							 </div>
+						  	</div>
+						</li>
+						<li class="header__navbar-item hide-on-tablet">
+                             <span class="header__navbar-title">
+								Chăm sóc khách hàng
+							</span>
+						</li>	
+						<li class="header__navbar-item hide-on-tablet">
+                             <span class="header__navbar-title">
+								Kiểm tra đơn hàng
+							</span>
+						</li>
+					</ul>
+					<ul class="header__navbar-list-2">
+						<li id="header__navbar-select-1" class="header__navbar-item js-register">
+							<!--<img src="https://static.fullstack.edu.vn/static/media/fallback-avatar.155cdb2376c5d99ea151.jpg" alt="" class="header__navbar-img">-->
+							<span class="header__navbar-user header__navbar-user--seperate-next">Đăng ký</span>
+						</li>
+						<li id="header__navbar-select-2" class="header__navbar-item js-login">
+							<span class="header__navbar-user">Đăng nhập</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<header class="header-sub">
+			<div class="grid wide">
+				<nav class="header-sub__navbar hide-on-mobile">
+					<div class="nav">
+						<nav class="nav__pc">
+							<ul class="nav__list">
+								<li>
+									<a href="" class="nav__link">Trang chủ</a>
+								</li>
+								<li>
+									<a href="" class="nav__link">Đăng ký</a>
+								</li>
+								<li>
+									<a href="" class="nav__link">Đăng nhập</a>
+								</li>
+								<li>
+									<a href="" class="nav__link">Cài đặt</a>
+								</li>
+							</ul>
+						</nav>	
+						<label id="nav__hidden" for="nav-mobile-input" class="nav__bars-btn">
+							<i class="nav__bars-icon fa-solid fa-bars"></i>
+						</label>
+
+						<input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+
+						<label id="nav__overlay-mobile" for="nav-mobile-input" class="nav__overlay">
+							
+						</label>
+
+						<nav class="nav__mobile">
+							<label id="nav__open" for="nav-mobile-input" class="nav__mobile-close">
+								<i class="nav__mobile-icon fa-solid fa-xmark"></i>
+							</label>
+							<ul class="nav__mobile-list">
+								<li>
+									<a href="" class="nav__mobile-link">Trang chủ</a>
+								</li>
+								<li>
+									<a href="" class="nav__mobile-link">Đăng ký</a>
+								</li>
+								<li>
+									<a href="" class="nav__mobile-link">Đăng nhập</a>
+								</li>
+								<li>
+									<a href="" class="nav__mobile-link">Tìm kiếm</a>
+								</li>
+								<li>
+									<a href="" class="nav__mobile-link">Cài đặt</a>
+								</li>
+								<li>
+									<a href="" class="nav__mobile-link">Giới thiệu</a>
+								</li>
+								<li>
+									<a href="" class="nav__mobile-link">Blog</a>
+								</li>
+								<li>
+									<a href="" class="nav__mobile-link">Tải ứng dụng</a>
+								</li>
+								<li>
+									<a href="" class="nav__mobile-link">Hỗ trợ</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<a href="" class="header__logo-mobile">
+						<svg viewBox="0 0 87 48" xmlns="http://www.w3.org/2000/svg"><path d="M69.052 12.375l-3.097 16.548a44.418 44.418 0 00-.74 6.633h-4.378l.27-2.94h-.068a6.042 6.042 0 01-5.251 3.008c-2.761 0-4.983-2.188-4.983-6.154 0-5.675 4.04-10.872 10.1-10.872.74 0 1.481.137 2.222.41l1.212-6.564 4.713-.069zm-6.666 10.394a2.664 2.664 0 00-1.885-.547c-2.828 0-4.848 3.35-4.848 6.496 0 1.983.875 3.077 2.222 3.077 1.414 0 3.03-1.436 3.636-4.581l.875-4.445zM4.481 30.017a10.123 10.123 0 005.252 1.436c1.818 0 3.501-.889 3.501-2.667 0-1.299-.942-2.12-2.962-3.145-2.424-1.3-4.646-3.009-4.646-5.95 0-4.512 3.905-7.316 8.753-7.316 2.693 0 4.31.616 5.252 1.163l-1.481 4.034a8.713 8.713 0 00-4.108-1.025c-2.222 0-3.366 1.162-3.366 2.393 0 1.299 1.346 2.12 3.232 3.145 2.693 1.436 4.444 3.283 4.444 5.95 0 4.991-4.108 7.59-9.023 7.59-3.097 0-5.32-.821-6.33-1.573l1.482-4.035zm27.606 4.308a13.756 13.756 0 01-5.992 1.3c-4.579 0-6.935-2.668-6.935-6.839 0-4.991 3.568-10.12 9.359-10.12 3.232 0 5.588 1.847 5.588 4.855 0 4.171-3.972 5.676-10.436 5.54 0 .615.202 1.162.471 1.64.606.82 1.684 1.3 3.098 1.3 1.548 0 3.097-.342 4.51-1.026l.338 3.35zm-4.174-12.24c-2.222 0-3.434 1.846-3.771 3.35 3.703.07 5.521-.478 5.521-1.982 0-.82-.606-1.368-1.75-1.368zm5.52 13.471l2.088-11.35c.404-2.052.74-4.24.875-5.676h4.242l-.404 3.077h.068a6.707 6.707 0 015.656-3.077c2.625 0 4.107 1.64 4.107 4.444 0 .958-.135 1.847-.27 2.804l-1.818 9.778h-4.713l1.75-9.368c.135-.615.135-1.23.135-1.846 0-1.163-.404-1.915-1.548-1.915-1.549 0-3.367 1.983-3.973 5.54l-1.414 7.59h-4.78zM84 25.3c0 5.95-3.973 10.325-9.561 10.325-4.107 0-6.8-2.735-6.8-6.77 0-5.675 3.904-10.325 9.56-10.325 4.31.069 6.8 3.078 6.8 6.77m-11.445 3.487c0 1.915.942 3.146 2.558 3.146 2.626 0 4.04-3.83 4.04-6.633 0-1.504-.606-3.077-2.558-3.077-2.694 0-4.107 4.034-4.04 6.565" fill="#fff"></path>
+						</svg>
+					</a>	
+					<a href="" class="header-sub__logo hide-on-mobile-tablet">
+						<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNCAzNCI+CiAgPGRlZnM+CiAgICA8cG9seWdvbiBpZD0icGFnZS0xLWNvcHktNEAxeC1hIiBwb2ludHM9IjAgLjIwOCAzMy43OTMgLjIwOCAzMy43OTMgMzQgMCAzNCIvPgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPG1hc2sgaWQ9InBhZ2UtMS1jb3B5LTRAMXgtYiIgZmlsbD0iI2ZmZiI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhZ2UtMS1jb3B5LTRAMXgtYSIvPgogICAgPC9tYXNrPgogICAgPHBhdGggZmlsbD0iI0ZFRkVGRSIgZD0iTTMxLjI5MTY3MjIsMC4yMDc0IEwyLjQ5NDcyMzcxLDAuMjA3NCBDMS4xMTc4OTg5NywwLjIwNzQgMC4wMDAxMDUxNTQ2MzksMS4yOTgyMDQxMiAwLjAwMDEwNTE1NDYzOSwyLjY0MzEzMTk2IEwwLjAwMDEwNTE1NDYzOSwzMS41NjE3MDkzIEMwLjAwMDEwNTE1NDYzOSwzMi45MDczMzgxIDEuMTE3ODk4OTcsMzMuOTk5ODk0OCAyLjQ5NDcyMzcxLDMzLjk5OTg5NDggTDMxLjI5MTY3MjIsMzMuOTk5ODk0OCBDMzIuNjY5ODk5LDMzLjk5OTg5NDggMzMuNzkzMzAxLDMyLjkwNzMzODEgMzMuNzkzMzAxLDMxLjU2MTcwOTMgTDMzLjc5MzMwMSwyLjY0MzEzMTk2IEMzMy43OTMzMDEsMS4yOTgyMDQxMiAzMi42Njk4OTksMC4yMDc0IDMxLjI5MTY3MjIsMC4yMDc0IiBtYXNrPSJ1cmwoI3BhZ2UtMS1jb3B5LTRAMXgtYikiLz4KICAgIDxwYXRoIGZpbGw9IiNFRDI1MjQiIGQ9Ik0xMiAyNi45OTkzMzE5QzEyIDI4LjEwNDA1ODggMTEuMTA0NTAyNSAyOSAxMC4wMDA1MDEyIDI5IDguODk1NDk3NDUgMjkgOCAyOC4xMDQwNTg4IDggMjYuOTk5MzMxOSA4IDI1Ljg5NTYwNzEgOC44OTU0OTc0NSAyNSAxMC4wMDA1MDEyIDI1IDExLjEwNDUwMjUgMjUgMTIgMjUuODk1NjA3MSAxMiAyNi45OTkzMzE5TTIyIDI2Ljk5OTMzMTlDMjIgMjguMTA0MDU4OCAyMS4xMDQ4MDE3IDI5IDE5Ljk5OTE2NDkgMjkgMTguODk1ODY2NCAyOSAxOCAyOC4xMDQwNTg4IDE4IDI2Ljk5OTMzMTkgMTggMjUuODk1NjA3MSAxOC44OTU4NjY0IDI1IDE5Ljk5OTE2NDkgMjUgMjEuMTA0ODAxNyAyNSAyMiAyNS44OTU2MDcxIDIyIDI2Ljk5OTMzMTlNMjMuNTM5MTI0MiAxMi44NjM4OTQ1QzIyLjA2NTU1MjMgMTIuMDY1NDE5MyAyMS4wMDc2Mzk1IDExLjQ2Njk5MDQgMjEuMDA3NjM5NSAxMC40OTQxMTU5IDIxLjAwNzYzOTUgOS42MzA2Njg0MSAyMS44NDk5MzM1IDguMDQ0MzE4NzcgMjMuNTgxMjU2NiA4LjA0MzI5MjkgMjQuMjcwNTk5MyA4LjA0MjYwODk4IDI1LjE2NzA2MzUgOC4xNTQwODc3NCAyNS4zMTg5NTI2IDguMTk5OTEwM0wyNi42MDczNTQzIDUuMzgzODc0NjhDMjQuNDE3MTc3NiA0Ljg1NTg4OTM3IDIzLjQyOTcyMTUgNS4wMjYxODUxNSAyMy40Mjk3MjE1IDUuMDI2MTg1MTUgMjAuMDMyNTc1NCA1LjE0ODk0ODU4IDE3LjA4MTg5MTEgNy45NjkwODc3MSAxNy4wODE4OTExIDExLjA5MzIyODcgMTcuMDgxODkxMSAxMy4yODc5MjQxIDE4LjgzNzY0MzggMTQuNTg0OTc2MSAyMC42OTc4NDI1IDE1LjU1Nzg1MDYgMjIuMjk5MjI3OCAxNi4zNTU5ODM4IDIzLjA0ODA1MTYgMTYuOTgwNDAxNyAyMy4wNDgwNTE2IDE3LjkyODMxMzEgMjMuMDQ4MDUxNiAxOS4xMTczMDU5IDIxLjk4MDU3OTQgMTkuNzYwODczNSAyMC43MTQxMjkgMTkuODc2NDU1OEwyMC42MTI1MTU1IDE5Ljg4NTY4ODcgMTAuNDIxMDc3MSAxOS45NTc4NDIxIDExLjAxMzA1NSAxOC4wNDMyMTE1IDE2LjcyNzEyOTIgMTguMDQzMjExNSAxNy43Njk4MTc2IDE1LjUwNDE2MyAxMC4xODA2NzQ1IDE1LjUwNDE2M0M5LjE5MTA5NDIgMTUuNTA0MTYzIDguNzgxNDUzOTYgMTUuODMwMzkyMiA4LjYwNTEzNTE3IDE2LjE1NTU5NTZMNy4wMzQ5MDY1OSAyMS41NDY5Mjc0QzYuODY1MzE0ODMgMjIuMTMwMzEwMiA3LjMzMDE4NzQ2IDIyLjc1MzAxODIgOC4wNzEyMjIwNSAyMi45NTI3MjI1IDguMTMzNTM1NTEgMjIuOTY5MTM2NiA4LjE5MzcyNDY2IDIyLjk3NDYwNzkgOC4yNTUzMzAwMiAyMi45ODQ1MjQ3TDguMjUxNzg5NDggMjIuOTk4MjAzMSA4LjQwNDc0MDcyIDIyLjk5NTgwOTRDOC40ODY4ODEyIDIzLjAwMjMwNjYgOC41NjkzNzU3MyAyMy4wMDA1OTY4IDguNjQ3OTc1NjggMjIuOTk1MTI1NUwyMC42MDkzMjkgMjIuOTY5MTM2NiAyMC43MTQxMjkgMjIuOTYzMzIzM0MyNC4yMjE3Mzk5IDIyLjcxMzY5MjkgMjcgMjAuNzg3Nzc3NiAyNyAxNy4zMDM4OTUzIDI3IDE1LjMwODIyMDIgMjUuNjU3MDc0IDEzLjkzNjYyMTEgMjMuNTM5MTI0MiAxMi44NjM4OTQ1Ii8+CiAgPC9nPgo8L3N2Zz4K" alt="sendo" class="header-sub__logo-link">
+					</a>
+					<!--<div class="modal-sub">-->
+					<a href="" class="header-sub__bar-info hide-on-mobile-tablet">
+						<i class="header-sub__bar-icon fa-solid 
+						fa-bars"></i>
+						<p class="header-sub__bar-text">TẤT CẢ DANH MỤC</p>
+						<ul class="header-sub__product-list">
+							<li class="header-sub__product-item">
+								<p>Thời trang nữ - Phổ biến</p>
+									<div class="header__sub-right-more">
+										<ul class="header__sub-right-section">
+												<li class="header__sub-section-item header__sub-section-title">
+													Xu hướng
+												</li>
+												<li class="header__sub-section-item">
+													Đầm màu sắc
+												</li>
+												<li class="header__sub-section-item">
+													Áo sơ mi
+												</li>
+												<li class="header__sub-section-item">
+													Áo thun
+												</li>
+												<li class="header__sub-section-item">
+													Áo khoác chống nắng
+												</li>
+												<li class="header__sub-section-item">
+													Áo khoác nữ
+												</li>
+										</ul>
+										<ul class="header__sub-right-section">
+												<li class="header__sub-section-item header__sub-section-title">
+													Xu hướng
+												</li>
+												<li class="header__sub-section-item">
+													Đầm màu sắc
+												</li>
+												<li class="header__sub-section-item">
+													Áo sơ mi
+												</li>
+												<li class="header__sub-section-item">
+													Áo thun
+												</li>
+												<li class="header__sub-section-item">
+													Áo khoác chống nắng
+												</li>
+												<li class="header__sub-section-item">
+													Áo khoác nữ
+												</li>
+										</ul>
+										<ul class="header__sub-right-section">
+												<li class="header__sub-section-item header__sub-section-title">
+													Xu hướng
+												</li>
+												<li class="header__sub-section-item">
+													Đầm màu sắc
+												</li>
+												<li class="header__sub-section-item">
+													Áo sơ mi
+												</li>
+												<li class="header__sub-section-item">
+													Áo thun
+												</li>
+												<li class="header__sub-section-item">
+													Áo khoác chống nắng
+												</li>
+												<li class="header__sub-section-item">
+													Áo khoác nữ
+												</li>
+										</ul>
+										<ul class="header__sub-right-section">
+												<li class="header__sub-section-item header__sub-section-title">
+													Xu hướng
+												</li>
+												<li class="header__sub-section-item">
+													Đầm màu sắc
+												</li>
+												<li class="header__sub-section-item">
+													Áo sơ mi
+												</li>
+												<li class="header__sub-section-item">
+													Áo thun
+												</li>
+												<li class="header__sub-section-item">
+													Áo khoác chống nắng
+												</li>
+												<li class="header__sub-section-item">
+													Áo khoác nữ
+												</li>
+										</ul>
+									</div>    
+							</li>
+	                        <li class="header-sub__product-item">
+								<p>Thời trang nam - Phổ biến</p>
+								<div class="header__sub-right-more">
+										<ul class="header__sub-right-section">
+												<li class="header__sub-section-item header__sub-section-title">
+													Nhập khẩu
+												</li>
+												<li class="header__sub-section-item">
+													Quần dài	
+												</li>
+												<li class="header__sub-section-item">
+													Quần âu
+												</li>
+												<li class="header__sub-section-item">
+													Quần nỉ
+												</li>
+												<li class="header__sub-section-item">
+													Áo cộc
+												</li>
+												<li class="header__sub-section-item">
+													Áo sơ mi
+												</li>
+										</ul>
+										<ul class="header__sub-right-section">
+												<li class="header__sub-section-item header__sub-section-title">
+													Nhập khẩu
+												</li>
+												<li class="header__sub-section-item">
+													Quần dài	
+												</li>
+												<li class="header__sub-section-item">
+													Quần âu
+												</li>
+												<li class="header__sub-section-item">
+													Quần nỉ
+												</li>
+												<li class="header__sub-section-item">
+													Áo cộc
+												</li>
+												<li class="header__sub-section-item">
+													Áo sơ mi
+												</li>
+										</ul>
+										<ul class="header__sub-right-section">
+												<li class="header__sub-section-item header__sub-section-title">
+													Nhập khẩu
+												</li>
+												<li class="header__sub-section-item">
+													Quần dài	
+												</li>
+												<li class="header__sub-section-item">
+													Quần âu
+												</li>
+												<li class="header__sub-section-item">
+													Quần nỉ
+												</li>
+												<li class="header__sub-section-item">
+													Áo cộc
+												</li>
+												<li class="header__sub-section-item">
+													Áo sơ mi
+												</li>
+										</ul>
+										<ul class="header__sub-right-section">
+												<li class="header__sub-section-item header__sub-section-title">
+													Nhập khẩu
+												</li>
+												<li class="header__sub-section-item">
+													Quần dài	
+												</li>
+												<li class="header__sub-section-item">
+													Quần âu
+												</li>
+												<li class="header__sub-section-item">
+													Quần nỉ
+												</li>
+												<li class="header__sub-section-item">
+													Áo cộc
+												</li>
+												<li class="header__sub-section-item">
+													Áo sơ mi
+												</li>
+										</ul>
+								</div> 
+							</li>
+							<li class="header-sub__product-item">
+								<p>Sức khỏe - Làm đẹp</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Giày dép - Túi xách</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Đồng hồ - Trang sức</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Điện thoại - Laptop</p>
+							</li>
+	                        <li class="header-sub__product-item">
+								<p>Phụ kiện công nghệ</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Điện gia dụng - Điện máy</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Nhà cửa - Tân trang nhà</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Tivi - Âm thanh - Camera</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Đời sống - Sách - VPP</p>
+							</li>
+	                        <li class="header-sub__product-item">
+								<p>Bách hóa - Thú cưng</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Tiện ích</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Thể thao - Dã ngoại</p>
+							</li>
+							<li class="header-sub__product-item">
+								<p>Vé máy bay - Tour - Dịch vụ</p>
+							</li>	
+		
+						</ul>
+						<div class="submenu__overlay">
+							
+						</div>
+					</a>
+					<!--</div>-->
+					<!-- header with search -->
+					<div class="header__search hide-on-mobile">
+						<div class="header__search-input-wrap">
+							<input type="text" class="header__search-input" placeholder="Tìm kiếm trên Sendo">
+
+							<!--search history-->
+							<div class="header__search-history">
+								<h3 class="header__search-history-heading">
+									Lịch sử tìm kiếm
+								</h3>
+								<ul class="header__search-history-list">
+									<li class="header__search-history-item">
+										<a href="">Ốp lưng iphone</a>
+									</li>
+									<li class="header__search-history-item">
+										<a href="">Ốp lưng samsung</a>
+									</li>
+									<li class="header__search-history-item">
+										<a href="">Ốp lưng xiaomi redmi note 11</a>
+									</li>
+								</ul>
+							</div> 
+						</div>
+
+						<button class="header__search-btn">
+							<i class="header__search-btn-icon
+							fa-solid fa-magnifying-glass"></i>
+							<p class="header__search-btn-text">Tìm kiếm</p>
+						</button>
+					</div>
+				<!--<div class="header__cart"> -->
+						<div class="header__cart-wrap">
+							<i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+							<div class="header__cart-list ">
+								<img src="https://minh-tuan-2611.github.io/shopee/asset/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+								<span class="header__cart-list-no-cart-msg">
+								Chưa có sản phẩm
+								</span>
+							</div>	
+						</div>
+				<!--</div>	-->
+				</nav>	
+			</div>
+			<ul class="header__sort-bar">
+	         	<li class="header__sort-item">
+	         		<a href="" class="header__sort-link">Phổ Biến</a>
+	         	</li>
+	         	<li class="header__sort-item">
+	         		<a href="" class="header__sort-link">FPT -49%</a>
+	         	</li>
+	         	<li class="header__sort-item">
+	         		<a href="" class="header__sort-link">SenMall</a>
+	         	</li>
+	         	<li class="header__sort-item">
+	         		<a href="" class="header__sort-link">Sale Shop+</a>
+	         	</li>
+	         	<li class="header__sort-item">
+	         		<a href="" class="header__sort-link">Bách Hóa</a>
+	         	</li>
+	         	<li class="header__sort-item">
+	         		<a href="" class="header__sort-link">Công nghệ</a>
+	         	</li>
+         	</ul>
+         	<nav class="mobile-category">
+         		<ul class="mobile-category__list">
+	         		<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Thời trang nữ - Phổ biến</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link ">Thời trang nam - Phổ biến</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Sức khỏe - Làm đẹp</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Giày dép - Túi xách</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Đồng hồ - Trang sức</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Điện thoại - Laptop</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Phụ kiện công nghệ</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Điện gia dụng - Điện máy</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Nhà cửa - Tân trang nhà</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Tivi - Âm thanh - Camera</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Đời sống - Sách - VPP</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Bách hóa - Thú cưng</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link mobile-category__link-note">Tiện ích</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Thể thao - Dã ngoại</a>
+					</li>
+					<li class="mobile-category__item">
+						<a href="" class="mobile-category__link">Vé máy bay - Tour - Dịch vụ</a>
+					</li>
+				</ul>	
+         	</nav>	
+		</header>
+		<div class="display-container">
+			  <img class="mySlides3" src="https://media3.scdn.vn/img4/2022/08_17/Xv2vyufrZweqWgDeEhGh.jpg">
+			  <img class="mySlides3" src="https://media3.scdn.vn/img4/2022/08_10/Abva9UaelO9S2JrE1KZS.jpg">
+			  <img class="mySlides3" src="https://media3.scdn.vn/img4/2022/08_01/ELLQNBJgxvuFMDKmEZDm.jpg">
+			  <img class="mySlides3" src="https://media3.scdn.vn/img4/2022/08_01/w6iNTIWLzcFm1CX94HS1.jpg">
+			  <img class="mySlides3" src="https://media3.scdn.vn/img4/2022/08_12/YscZzdfkVCNb4m90rTM4.jpg">
+
+			  <button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
+
+			  <div class="badge" style="width:100%">
+
+			    <span class="image-badge" onclick="currentDiv(1)"></span>
+			    <span class="image-badge" onclick="currentDiv(2)"></span>
+			    <span class="image-badge" onclick="currentDiv(3)"></span>
+			    <span class="image-badge" onclick="currentDiv(4)"></span>
+			    <span class="image-badge" onclick="currentDiv(5)"></span>
+			  </div>
+		</div>
+		<div class="app__common hide-on-mobile-tablet">
+			<div class="grid wide">
+				<div class="row sm-gutter app__content">
+					<div class="col l-2 m-4 c-6">
+						<a href="#" class="home-filter-item">
+							<img src="https://media3.scdn.vn/img3/2019/8_9/J2lG1x.png" alt="" class="home-filter-item__img-1">
+							<h1 class="home-filter-item__title">
+								Phổ Biến
+							</h1>
+						</a>
+					</div>
+
+					<div class="col l-2 m-4 c-6">
+						<a href="#" class="home-filter-item">
+							<img src="https://media3.scdn.vn/img4/2020/08_14/lnLqx2msbOZeSCvA8mkO.png" alt="" class="home-filter-item__img-1">
+							<h1 class="home-filter-item__title">
+								FPT -49%
+							</h1>
+						</a>
+					</div>
+
+					<div class="col l-2 m-4 c-6">
+						<a href="#" class="home-filter-item">
+							<img src="	https://media3.scdn.vn/img3/2019/2_20/5bEiQ9.png" alt="" class="home-filter-item__img-1">
+							<h1 class="home-filter-item__title">
+								SenMall 
+							</h1>
+						</a>
+					</div>
+
+					<div class="col l-2 m-4 c-6">
+						<a href="#" class="home-filter-item">
+							<img src="https://media3.scdn.vn/img4/2020/08_17/p7PZS2UNuVmSxNuuoJ6e.png" alt="" class="home-filter-item__img-1">
+							<h1 class="home-filter-item__title">
+								Sale Shop+
+							</h1>
+						</a>
+					</div>
+
+					<div class="col l-2 m-4 c-6">
+						<a href="#" class="home-filter-item">
+							<img src="https://media3.scdn.vn/img3/2019/8_9/cEmbcZ.png" alt="" class="home-filter-item__img-1">
+							<h1 class="home-filter-item__title">
+								Bách Hóa
+							</h1>
+						</a>
+					</div>	
+
+					<div class="col l-2 m-4 c-6">
+						<a href="#" class="home-filter-item">
+							<img src="https://media3.scdn.vn/img3/2019/8_9/zrgTfU.png" alt="" class="home-filter-item__img-1">
+							<h1 class="home-filter-item__title">
+								Công Nghệ
+							</h1>
+						</a>
+					</div>	
+				</div>
+			</div>	
+		</div>
+		<div class="app__container">
+			<div class="grid wide">
+				<div class="home-product">
+					 <div class="row sm-gutter">
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/03_17/EFgUVX7j1wDGT7ZAP8ps_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				    Nồi chiên không dầu Sunhouse 6 lít SHD4026 - Đen - 00776363
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">1.200.000đ</div>
+
+					 				<div class="home-product-item__price-old">2.200.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					45%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/11_18/JRqOBfY34rBKj42apoK6_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Combo 5 tuyp Sủi PLuszs Vitamin C- Mỗi Tuýp 20 viên - đại uy - 2539_67671673
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">79.000đ</div>
+
+					 				<div class="home-product-item__price-old">125.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					37%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/06_28/4yxHRpnqGyK2aSwDhdYO_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Ấm siêu tốc Thái Lan 2,5 lit - AM02223
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">89.000đ</div>
+
+					 				<div class="home-product-item__price-old">259.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					66%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/03_13/4uftu73c8UDv5a3ceBTw_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Bộ dụng cụ sửa chữa đa năng 8 món - BỘ SỬA CHỮA
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">40.000đ</div>
+
+					 				<div class="home-product-item__price-old">169.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					77%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/04_22/pFjddp9WjnliFhCusnCj_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   [Combo 2 hộp] Viên Uống Bổ Não Ginkgo 5Extra Thành Phần Tinh Dầu Tỏi, Sữa Ong Chúa, Hỗ Trợ Tăng Cường Lưu Thông Máu, Giảm Đau
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">69.000đ</div>
+
+					 				<div class="home-product-item__price-old">249.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					73%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/07_07/6rNXtkYBVQU4nYUId279_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Tai nghe Apple AirPods Pro 2021 MagSafe Chính Hãng - 3000000001537
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">4.490.000đ</div>
+
+					 				<div class="home-product-item__price-old">7.990.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					44%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/06_15/Brp4KwrzckFDpSEsRrmr_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				  Bộ Vá Canh - Sạn Chiên - Vá Lỗ - Sạn Lỗ (set 4 món) inox cán tim vàng dụng cụ nhà bếp chuyên dụng - N069 - 4261_94834794
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">79.000đ</div>
+
+					 				<div class="home-product-item__price-old">109.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					28%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2020/05_27/d681Gl9uQg4DLPTvvBWX_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Đèn Pin T6 - Đèn Pin Mini T6
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">79.000đ</div>
+
+					 				<div class="home-product-item__price-old">160.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					51%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/03_18/2Bk7nAYb2LZAy8x5eyRO_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Nồi chiên không dầu Kalite 12 lít KL-1200 - Đen - 00781726
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">2.690.000đ</div>
+
+					 				<div class="home-product-item__price-old">3.553.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					25%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/02_26/jhYwj1qc2D5PWszgI2yj_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   CẶP LỒNG 4 TẦNG CỠ LỚN 2,8lit - cặp lồng lõi inox giữ nhiệt - MP56
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">74.000đ</div>
+
+					 				<div class="home-product-item__price-old">821.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					91%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/03_29/xek9mwElXrvjVQkHkacM_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   [DA MẶT] Tẩy da chết Face Organic Shop Organic Coffee 75ml - Làm Sạch Lỗ Chân Long Sạch mụn Sáng Da - 2975_74912462
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">39.000đ</div>
+
+					 				<div class="home-product-item__price-old">75.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					48%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/03_21/lDBI9zLUlTqVA9jQs97n_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Cân sức khỏe điện tử Scale SE - RLS-CANSCALE
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">104.000đ</div>
+
+					 				<div class="home-product-item__price-old">166.600đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					11%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/06_18/WUUdLos3fVviicL1cCyz_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Viên dầu cá Alaska 369 bổ não sáng mắt khỏe tim mạch Chai vàng 100 viên - 7784346643
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">56.050đ</div>
+
+					 				<div class="home-product-item__price-old">129.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					57%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/07_05/k8RtONbaXXPhHlxy6o1a_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Máy Sấy Tóc Sunlight-Duck Nội Địa Vịt Vàng Kèm Mỏ Vịt, Công suất 1200W sấy cực khỏe, tiện dụng cho mọi gia đình - MSTSDL
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">29.000đ</div>
+
+					 				<div class="home-product-item__price-old">200.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					86%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/12_05/6WKd5lGCC9HBlToRyQUW_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Nồi lẩu kiêm nồi hấp 2 tầng - Nồi hấp 2 tầng size 28cm - VAU6
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">49.000đ</div>
+
+					 				<div class="home-product-item__price-old">85.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					43%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/10_29/Rnn0UmRzTjmwEJZYAHGH_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   BÌNH Ủ CHÁO GIỮ NHIỆT 430ML TIỆN LỢI - Bình ủ cách nhiệt giữ nóng đồ ăn - ĐCXV
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">69.000đ</div>
+
+					 				<div class="home-product-item__price-old">599.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					89%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/04_22/pFjddp9WjnliFhCusnCj_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   [Combo 2 hộp] Viên Uống Bổ Não Ginkgo 5Extra Thành Phần Tinh Dầu Tỏi, Sữa Ong Chúa, Hỗ Trợ Tăng Cường Lưu Thông Máu, Giảm Đau
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">69.000đ</div>
+
+					 				<div class="home-product-item__price-old">249.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					73%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/07_20/PvUu5NtvlbdKPPVpb8xL_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Quạt Tích Điện Xanh Ucamart - Super, Sạc Điện Gấp Gọn Đi Du Lịch, Tháo Rời Dễ Vệ Sinh-Bản Nâng Cấp Nội Địa Trung - QSP3CD
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">109.000đ</div>
+
+					 				<div class="home-product-item__price-old">300.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					64%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/01_22/3YeEnmhcQuUGcpXmFjXS_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				  Kem Abutine 3C3 Hồng phiên bản V-250 mẫu mới nhất hũ 250g – Cochi633 - 3299_71847860
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">24.000đ</div>
+
+					 				<div class="home-product-item__price-old">29.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					18%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/04_28/FK10XMS2c1nqlJTsKwAp_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   DẦU ĂN SIMPLY CAN 2 LÍT - dsl2
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">202.000đ</div>
+
+					 				<div class="home-product-item__price-old">260.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					71%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2022/03_12/kWv8XW1HU2qdwqeZoUY4_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				  Chăn hè trần bông 1.6x2m cotton cao cấp - chăn mền - mền tuyết - chăn hè cotton - chăn hè cotton chăn 3 lớp - FFFFDEW
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">125.000đ</div>
+
+					 				<div class="home-product-item__price-old">235.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					58%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2020/12_18/fZTkouJhoAexsGL20zMq_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Bộ đồ chơi trí tuệ bằng gỗ chữ cái, số, hình khối và câu cá - HALG5D
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">99.000đ</div>
+
+					 				<div class="home-product-item__price-old">151.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					35%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2020/02_13/n5OEE2gEOvxaSwZ5OmcX_simg_de2fe0_250x250_maxb.png);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Điện Thoại Nokia 105 dùng 1 Sim - Pin sạc đầy đủ - 105 Giá Sỉ
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">119.000đ</div>
+
+					 				<div class="home-product-item__price-old">189.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					38%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+
+					 	<div class="col l-2 m-4 c-6">
+					 		<a href="#" class="home-product-item">
+					 			<div class="home-product-item__img" style="background-image: url(https://media3.scdn.vn/img4/2021/12_04/3uECyWk6vWi4ed3z8Jh8_simg_de2fe0_250x250_maxb.jpg);"></div>
+					 			<img src="https://media3.scdn.vn/img4/2021/04_16/BNnRsHfKT5xoQ7UKGWto.png" alt="" class="home-product-item__sale">
+					 			<img src="https://media3.scdn.vn/img4/2020/12_24/4o43qk8zwweHyKe8pJsS.png" alt="" class="home-product-item__freeship">
+					 			<div class="home-product-item__names">
+					 				<!--<p class="home-product-item__shop">
+					 					<span></span>
+					 				</p>-->
+					 				<h4 class="home-product-item__name">
+					 				   Thùng 300 cái khẩu trang 4 lớp Kf94 TN MASK 4d Hàn Quốc - 3656_92961423
+					 				</h4>
+					 			</div>
+					 			<div class="home-product-item__price">
+					 				<div class="home-product-item__price-current">106.000đ</div>
+
+					 				<div class="home-product-item__price-old">160.000đ</div>
+
+					 			</div>
+
+					 			<div class="home-product-item__sell">
+					 				<span class="home-product-item__quantity">
+					 					Đang bán
+					 				</span>
+					 			</div>
+					 			<div class="home-product-item__percent">
+					 				<span class="home-product-item__percent-number">
+					 					34%
+					 				</span>
+					 			</div>
+					 		</a>
+					 	</div>	
+					 </div>	
+				</div>
+			</div>
+		</div>
+		<footer class="footer-benifit">
+			<div class="grid wide footer-benifit__info">
+				<div class="row">
+					<div class="col l-2-4 m-4 c-6 footer-benifit__advanced">
+						<img src="https://pwa-web.scdn.vn/static/media/benefit_1.d1c4f276.svg" alt="" class="footer-benifit__img">
+						<ul class="footer-benifit__list">
+							<li class="footer-benifit__item-1">
+								<a href="" class="footer-benifit__item-link-1">
+									Siêu nhiều hàng tốt
+								</a>
+							</li>
+							<li class="footer-benifit__item-2">
+								<a href="" class="footer-benifit__item-link-2">
+									Cần gì cũng có 26 ngành hàng & 10 triệu sản phẩm
+								</a>
+							</li>
+						</ul>
+					</div> 
+
+					<div class="col l-2-4 m-4 c-6 footer-benifit__advanced">
+						<img src="https://pwa-web.scdn.vn/static/media/benefit_2.1b86fd66.svg" alt="" class="footer-benifit__img">
+						<ul class="footer-benifit__list">
+							<li class="footer-benifit__item-1">
+								<a href="" class="footer-benifit__item-link-1">
+									Siêu yên tâm
+								</a>
+							</li>
+							<li class="footer-benifit__item-2">
+								<a href="" class="footer-benifit__item-link-2">
+									Miễn phí đổi trả 48h (*)
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col l-2-4 m-4 c-6 footer-benifit__advanced">
+						<img src="https://pwa-web.scdn.vn/static/media/benefit_3.8c790757.svg" alt="" class="footer-benifit__img">
+						<ul class="footer-benifit__list">
+							<li class="footer-benifit__item-1">
+								<a href="" class="footer-benifit__item-link-1">
+									Siêu tiện lợi
+								</a>
+							</li>
+							<li class="footer-benifit__item-2">
+								<a href="" class="footer-benifit__item-link-2">
+									Mạng lưới vận chuyển toàn quốc, mua gì cũng có
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col l-2-4 m-4 c-6 footer-benifit__advanced">
+						<img src="https://pwa-web.scdn.vn/static/media/benefit_4.9504e1ef.svg" alt="" class="footer-benifit__img">
+						<ul class="footer-benifit__list">
+							<li class="footer-benifit__item-1">
+								<a href="" class="footer-benifit__item-link-1">
+									Siêu tiết kiệm
+								</a>
+							</li>
+							<li class="footer-benifit__item-2">
+								<a href="" class="footer-benifit__item-link-2">
+									Giá hợp lý, vừa túi tiền. Luôn có nhiều chương trình khuyến mãi
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col l-2-4 m-4 c-6 footer-benifit__advanced">
+						<img src="https://pwa-web.scdn.vn/static/media/benefit_5.85c0063d.png" alt="" class="footer-benifit__img-download">
+						<ul class="footer-benifit__list">
+							<li class="footer-benifit__item-1">
+								<a href="" class="footer-benifit__item-link-1">
+									Tải ứng dụng SENDO
+								</a>
+							</li>
+							<li class="footer-benifit__item-2">
+								<a href="" class="footer-benifit__item-link-2">
+									Mang thế giới mua sắm của Sendo trong tầm tay bạn
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
+				</div>
+			</div>
+		</footer>
+		<footer class="footer-content">
+			<div class="grid wide footer-content__info">
+				<div class="row">
+					<div class="col l-2-4 m-6 c-12 footer-content__wrap">
+						<h3 class="footer-content__heading">
+							VỀ CHÚNG TÔI
+						</h3>
+						<ul class="footer-content__list">
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Giới thiệu Sendo.vn
+								</a>
+							</li>
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Giới thiệu SenMall
+								</a>
+							</li>
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Giới thiệu khách hàng
+								</a>
+							</li>
+						</ul>
+					</div> 	
+
+					<div class="col l-2-4 m-6 c-12 footer-content__wrap">
+						<h3 class="footer-content__heading">
+							DÀNH CHO NGƯỜI MUA
+						</h3>
+						<ul class="footer-content__list">
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Giải quyết khiếu nại
+								</a>
+							</li>
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Hướng dẫn mua hàng
+								</a>
+							</li>
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Chính sách đổi trả
+								</a>
+							</li>
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Chăm sóc khách hàng
+								</a>
+							</li>
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Nạp tiền điện thoại
+								</a>
+							</li>
+						</ul>
+					</div> 	
+
+					<div class="col l-2-4 m-6 c-12 footer-content__wrap">
+						<h3 class="footer-content__heading">
+							DÀNH CHO NGƯỜI BÁN
+						</h3>
+						<ul class="footer-content__list">
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Mở shop trên Sendo
+								</a>
+							</li>
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Quy định đối với người bán
+								</a>
+							</li>
+							<li class="footer-content__item">
+								<a href="" class="footer-content__item-link">
+									Hệ thống tiêu chí kiểm duyệt
+								</a>
+							</li>
+						</ul>
+					</div> 		
+
+					<div class="col l-4-8 m-6 c-12 footer-content__wrap">
+						<h3 class="footer-content__heading">
+							ĐĂNG KÝ NHẬN BẢN TIN ƯU ĐÃI KHỦNG TỪ SENDO
+						</h3>
+						<div class="footer-content__input">
+							<input type="text" class="footer-content__search-input" placeholder="Email của bạn là">
+							<button class="footer-content__search-btn">
+								<p class="footer-content__search-btn-text">Đăng ký</p>
+							</button>	
+						</div>
+
+						<div class="footer-content__select">
+							<div class="footer-content__select-1">
+								<input name="gender" type="radio" value="Nam" class="footer-content__select-check-id"/>
+								<span class="footer-content__select-text-id">Nam</span>
+							</div>
+							<div class="footer-content__select-2">
+								<input name="gender" type="radio" value="Nam" class="footer-content__select-check-id"/>
+								<span class="footer-content__select-text-id">Nữ</span>
+							</div>	
+						</div>
+					</div> 		
+				</div>
+			</div>
+		</footer>
+		<footer class="footer-bottom">
+			<div class="grid wide">
+				<div class="row">
+					<div class="col l-12">
+						<div class="footer-bottom__container">
+							<div class="footer-bottom__container-info">
+								Copyright © 2012 Sendo.vn
+							</div>
+							<div class="footer-bottom__container-info">
+								Công ty Cổ phần Công nghệ Sen Đỏ
+							</div>
+							<div class="footer-bottom__container-info">
+								Số ĐKKD: 0312776486 - Ngày cấp: 13/05/2014, được sửa đổi lần thứ 20, ngày 26/04/2022.
+							</div>
+							<div class="footer-bottom__container-info">
+								Cơ quan cấp: Sở Kế hoạch và Đầu tư TPHCM.
+							</div>
+							<div class="footer-bottom__container-info">
+								Địa chỉ: Tầng 5, Tòa nhà A, Vườn Ươm Doanh Nghiệp, Lô D.01, Đường Tân Thuận, Khu chế xuất Tân Thuận, Phường Tân Thuận Đông, Quận 7, Thành phố Hồ Chí Minh, Việt Nam.
+							</div>
+							<div class="footer-bottom__container-info">
+								Email: lienhe@sendo.vn
+							</div>
+						</div>
+						<div class="footer-bottom__img">
+							<a href="#">
+							    <img src="https://media3.scdn.vn/img4/2020/12_16/XhpGDnvWqrlKeHLst3aS.png" alt="" class="footer-bottom__img-info">
+							</a>
+							<a href="#">
+							    <img src="https://media3.scdn.vn/img4/2020/12_16/h6lEMGIAt4Uapd0Mls34.png" alt="" class="footer-bottom__img-info">
+							</a>						
+						</div>
+					</div> 	
+				</div>	
+			</div>	
+		</footer>
+		<a href="#">
+			<button class="back-top">
+				<i class="back-top__icon fa-solid fa-arrow-up"></i>
+			</button>
+		</a>	
+	</div>
+	<!-- modal layout -->
+	<div id="modal-1" class="modal js-modal">
+		<div class="modal__overlay">
+			
+		</div>
+		<div class="modal__body js-modal-body">
+				<!--register form -->
+				<div class="auth-form">
+					<div class="auth-form__container">
+						<div class="auth-form__header">
+							<div class="auth-form__head">
+								<h3 class="auth-form__heading">
+									Đăng ký
+								</h3>
+								<!--<span class="auth-form__switch-btn">
+									Đăng nhập
+								</span>	-->
+							</div>	
+							<button id="close-1" class="auth-form__btn js-modal-close">
+								<i class="auth-form__close fa-solid fa-xmark"></i>
+							</button>  
+						</div>
+
+						<div class="auth-form__form">
+							<div class="auth-form__group">
+								<input type="text" class="auth-form__input" placeholder="Email của bạn">
+							</div>
+
+							<div class="auth-form__group">
+								<input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+							</div>
+
+							<div class="auth-form__group">
+								<input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+							</div>
+						</div>
+						<div class="auth-form__aside">
+							<p class="auth-form__policy-text">
+								Bằng việc đăng kí, bạn đã đồng ý với Sendo về
+								<a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+								<a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+							</p>
+						</div>
+						<div class="auth-form__controls">
+							<button class="auth-form__controls-back">
+								TRỞ LẠI
+							</button>
+
+							<button class="auth-form__controls-register">
+								ĐĂNG KÝ
+							</button>
+						</div>
+					</div>
+					<div class="auth-form__socials">
+						<a href="" class="auth-form__socials--facebook">
+							<i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+							<span class="auth-form__socials-title1">Kết nối với Facebook</span>
+							
+						</a>
+
+						<a href="" class="auth-form__socials--google">
+							<i class="auth-form__socials-icon fa-brands fa-google"></i>
+							<span class="auth-form__socials-title2">Kết nối với Google</span>
+						</a>
+					</div>
+				</div>
+		</div>
+	</div>	
+	<div id="modal-2" class="modal js-modal-login">
+		<div class="modal__overlay">
+			
+		</div>
+		<div class="modal__body js-modal-body-login">
+				<!--login form -->
+				<div class="auth-form">
+					<div class="auth-form__container">
+						<div class="auth-form__header">
+							<div class="auth-form__head">
+								<h3 class="auth-form__heading">
+									Đăng nhập
+								</h3>
+								<!--<span class="auth-form__switch-btn">
+									Đăng nhập
+								</span>	-->
+							</div>	
+							<button id="close-2" class="auth-form__btn js-modal-close-login">
+								<i class="auth-form__close fa-solid fa-xmark"></i>
+							</button>  
+						</div>
+
+						<div class="auth-form__form">
+							<div class="auth-form__group">
+								<input type="text" class="auth-form__input" placeholder="Email của bạn">
+							</div>
+
+							<div class="auth-form__group">
+								<input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+							</div>
+						</div>
+						<div class="auth-form__aside">
+							<div class="auth-form__help">
+								<a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+								<span class="auth-form__help-separate"></span>
+								<a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+							</div>
+						</div>
+						<div class="auth-form__controls">
+							<button class="auth-form__controls-back">
+								TRỞ LẠI
+							</button>
+
+							<button class="auth-form__controls-register">
+								ĐĂNG NHẬP
+							</button>
+						</div>
+					</div>
+					<div class="auth-form__socials">
+						<a href="" class="auth-form__socials--facebook">
+							<i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+							<span class="auth-form__socials-title1">Kết nối với Facebook</span>
+							
+						</a>
+
+						<a href="" class="auth-form__socials--google">
+							<i class="auth-form__socials-icon fa-brands fa-google"></i>
+							<span class="auth-form__socials-title2">Kết nối với Google</span>
+						</a>
+					</div>
+				</div>
+		</div>
+	</div>	
+
+	<script>
+		//FOR REGISTER
+
+		const forms = document.querySelectorAll('.js-register')
+		const modal = document.querySelector('.js-modal')
+		const modalClose = document.querySelector('.js-modal-close')
+		const modalBody = document.querySelector('.js-modal-body')
+		
+
+		// hàm hiển thị form
+
+		function showForms() {
+			modal.classList.add('open');
+		}
+		//hàm ẩn form
+
+		function hideForms() {
+			modal.classList.remove('open');
+		}
+
+		//lặp qua từng thẻ và nghe hành vi click
+
+		for(const form of forms) {
+			form.addEventListener('click', showForms)
+		}
+		//nghe hành vi vào nút button close
+
+		modalClose.addEventListener('click', hideForms)
+
+		modal.addEventListener('click', hideForms)
+
+		modalBody.addEventListener('click', function (event) {
+			event.stopPropagation()
+		})
+		
+
+		//FOR LOGIN
+
+		const formsLogin = document.querySelectorAll('.js-login')
+		const modalLogin = document.querySelector('.js-modal-login')
+		const modalCloseLogin = document.querySelector('.js-modal-close-login')
+		const modalBodyLogin = document.querySelector('.js-modal-body-login')
+
+		// hàm hiển thị form
+
+		function showFormsLogin() {
+			modalLogin.classList.add('open');
+		}
+		//hàm ẩn form
+
+		function hideFormsLogin() {
+			modalLogin.classList.remove('open');
+		}
+
+		//lặp qua từng thẻ và nghe hành vi click
+
+		for(const formLogin of formsLogin) {
+			formLogin.addEventListener('click', showFormsLogin)
+		}
+		//nghe hành vi vào nút button close
+
+		modalCloseLogin.addEventListener('click', hideFormsLogin)
+
+		modalLogin.addEventListener('click', hideFormsLogin)
+
+		modalBodyLogin.addEventListener('click', function (event) {
+			event.stopPropagation()
+		})
+
+		//--------------
+		document.getElementById("header__navbar-select-1").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'hidden';
+        };
+ 
+        document.getElementById("header__navbar-select-2").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'hidden';
+        };
+        //click vao close
+         document.getElementById("close-1").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'auto';
+        };
+ 
+        document.getElementById("close-2").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'auto';
+        };
+        //click vao modal
+        document.getElementById("modal-1").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'auto';
+        };
+ 
+        document.getElementById("modal-2").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'auto';
+        };
+
+        //for mobile
+        document.getElementById("nav__hidden").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'hidden';
+        };
+ 		document.getElementById("nav__open").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'auto';
+        };
+        document.getElementById("nav__overlay-mobile").onclick = function () {
+            document.getElementById("modal-open").style.overflow = 'auto';
+        };
+
+        //slider
+        var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+		  showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides3");
+		  var dots = document.getElementsByClassName("image-badge");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" badge-white", "");
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " badge-white";
+
+		  //auto
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+:root {
+	--white-color: #fff;
+	--black-color: #000;
+	--text-color: #333;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 1.6rem;
+	font-family: "Times New Roman", Times, serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow: unset;
+}
+
+@keyframes growth {
+	from {
+		transform: scale(var(--growth-from)); 	
+	}
+	to {
+		transform: scale(var(--growth-to));
+	}
+}
+
+@keyframes modalFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-140px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInMobile {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
